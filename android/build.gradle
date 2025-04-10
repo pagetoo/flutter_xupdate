@@ -2,14 +2,14 @@ group 'com.xuexiang.flutter_xupdate'
 version '3.0.0'
 
 buildscript {
-    ext.kotlin_version = '1.9.22'
+    ext.kotlin_version = '1.9.23'
     repositories {
         google { url'https://maven.aliyun.com/repository/google'}
         maven { url 'https://maven.aliyun.com/repository/public' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.android.tools.build:gradle:7.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -27,7 +27,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace = "com.xuexiang.flutter_xupdate"
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
