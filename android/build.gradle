@@ -3,8 +3,10 @@ version '3.0.0'
 
 buildscript {
     repositories {
-        google { url'https://maven.aliyun.com/repository/google'}
-        maven { url 'https://maven.aliyun.com/repository/public' }
+        google()
+        mavenCentral()
+        //google { url'https://maven.aliyun.com/repository/google'}
+        //maven { url 'https://maven.aliyun.com/repository/public' }
     }
 
     dependencies {
@@ -14,8 +16,10 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-        google { url'https://maven.aliyun.com/repository/google'}
-        maven { url 'https://maven.aliyun.com/repository/public' }
+        //google { url'https://maven.aliyun.com/repository/google'}
+        //maven { url 'https://maven.aliyun.com/repository/public' }
+        google()
+        mavenCentral()
         maven { url "https://jitpack.io" }
     }
 }
