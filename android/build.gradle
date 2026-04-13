@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://maven.aliyun.com/repository/public' }
+        jcenter()
     }
 
     dependencies {
@@ -15,13 +15,11 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-        //google { url'https://maven.aliyun.com/repository/google'}
-        //maven { url 'https://maven.aliyun.com/repository/public' }
         google()
         mavenCentral()
         jcenter()
         maven { url "https://jitpack.io" }
-        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
 }
 
